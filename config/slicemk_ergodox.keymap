@@ -33,8 +33,8 @@
 				&kp LCTR    &kp A        &kp S        &kp D        &kp F        &kp G                                   &kp H        &kp J        &kp K        &kp L        &kp SEMICOLON &kp APOS
 				&kp LSHIFT  &kp Z        &kp X        &kp C        &kp V        &kp B        &kp RA(F)    &kp RA(G)     &kp N        &kp M        &kp CMMA     &kp DOT      &kp FSLH      &kp RSHIFT
 				&kp LCTRL   &none        &none        &kp LWIN     &kp LALT                                                          &mo 1        &mo 2        &kp RALT     &none         &kp RCTRL
-				                                                                &kp ESC      &kp PG_UP    &kp BACKSPACE &kp DEL
-				                                                   &mo 1        &mo 2        &kp PG_DN    &kp ENTER     &kp LSFT     &kp SPC
+				                                                                &kp ESC      &kp PGUP     &kp BACKSPACE &kp DEL
+				                                                   &mo 1        &mo 2        &kp PGDN     &kp ENTER     &kp LSFT     &kp SPC
 				                                                                             &kp LCTRL    &kp RCTRL
 			>;
 		};
