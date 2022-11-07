@@ -50,57 +50,57 @@
 				                                                                             &kp LCTRL    &kp RCTRL
 			>;
 		};
-		// layer_1 {
-		// 	bindings = <
-		// 		&bootloader
-		// 		&bt BT_SEL 0       &bt BT_SEL 1        &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4      &none       &none     &none     &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT    &kp C_PAUSE &none
-		// 		&none              &kp LA(F4)          &kp LC(W)          &kp LC(DEL)      &kp LC(BACKSPACE) &kp LC(T)   &none     &none     &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT) &kp RC(V)   &none 
-		// 		&none              &kp ESC             &kp ENTER          &kp DEL          &kp BACKSPACE     &none                           &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &none       &tog 1
-		// 		&none              &kp LC(C)           &kp LC(LS(TAB))    &kp LC(TAB)      &none             &none       &none     &none     &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none       &none
-		// 		&none              &none               &none              &none            &none                                             &none        &none        &none        &none         &none
-		// 		                                                                                             &none       &none     &none     &none
-		// 		                                                                           &none             &none       &none     &none     &none        &none
-		// 		                                                                                                         &none     &none     
-		// 	>;
-		// };
-		// layer_2 {
-		// 	bindings = <
-		// 		&bootloader
-		// 		&kp F12          &kp F1           &kp F2           &kp F3           &kp F4            &kp F5           &none     &none     &kp F6           &kp F7           &kp F8           &kp F9            &kp F10           &kp F11
-		// 		&kp RA(NUMBER_1) &kp RA(Q)        &kp RA(W)        &kp RA(NUMBER_3) &kp RA(F)         &kp RA(G)        &none     &none     &kp LS(RBKT)     &kp RBKT         &none            &none             &kp RA(SEMICOLON) &none 
-		// 		&none            &kp LS(NUMBER_1) &kp LS(NUMBER_2) &kp LS(NUMBER_3) &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                     &kp LC(NUMBER_6) &kp LC(NUMBER_7) &kp LC(NUMBER_8) &kp LC(NUMBER_9)  &kp LC(NUMBER_0)  &tog 2 
-		// 		&none            &kp RA(X)        &kp RA(C)        &kp RA(V)        &kp RA(V)         &kp RA(B)        &none     &none     &kp RA(N)        &none            &kp RA(CMMA)     &kp RA(DOT)       &kp RA(FSLH)      &none
-		// 		&none            &none            &none            &none            &none                                                  &none            &none            &none            &none             &none 
-		// 		                                                                                      &none            &none     &none     &none    
-		// 		                                                                    &none             &none            &none     &none     &none            &none
-		// 		                                                                                                       &none     &none     
-		// 	>;
-		// };
 		layer_1 {
 			bindings = <
 				&bootloader
-				&none &none &none &none    &none            &none             &none          &to 0            &none &none          &none           &none &none &none
-				&none &none &none &none    &none            &none             &none          &kp C_PLAY_PAUSE &none &none          &none           &none &none &none
-				&none &none &none &kp PLUS &kp EQUAL        &none                                             &none &kp MINUS      &kp UNDERSCORE  &none &none &none
-				&to 0 &none &none &kp LBKT &kp RBKT         &none             &kp C_PREVIOUS &kp C_NEXT       &none &kp LEFT_BRACE &kp RIGHT_BRACE &none &none &to 0
-				&none &none &none &none    &none                                                                    &none          &none           &none &none &none
-				                                            &none             &none          &none            &none
-				                           &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &none          &none            &none &none
-				                                                              &none          &none
+				&bt BT_SEL 0       &bt BT_SEL 1        &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4      &none       &none     &none     &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT    &kp C_PAUSE &none
+				&kp CAPSLOCK       &kp LA(F4)          &kp LC(W)          &kp LC(DEL)      &kp LC(BACKSPACE) &kp LC(T)   &none     &none     &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT) &kp RC(V)   &none 
+				&none              &kp ESC             &kp ENTER          &kp DEL          &kp BACKSPACE     &none                           &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &none       &tog 1
+				&none              &kp LC(C)           &kp LC(LS(TAB))    &kp LC(TAB)      &none             &none       &none     &none     &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none       &none
+				&none              &none               &none              &none            &none                                             &none        &none        &none        &none         &none
+				                                                                                             &none       &none     &none     &none
+				                                                                           &none             &none       &none     &none     &none        &none
+				                                                                                                         &none     &none     
 			>;
 		};
 		layer_2 {
 			bindings = <
 				&bootloader
-				&none &none     &none        &none     &none    &none &none                &to 0                &none &none        &none        &none        &none        &none
-				&none &none     &none        &none     &none    &none &none                &none                &none &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &none        &none
-				&none &kp SLASH &kp ASTERISK &kp MINUS &kp PLUS &none                                           &none &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_0 &kp BACKSPACE
-				&none &none     &none        &none     &kp DOT  &none &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &none &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &none        &none
-				&none &none     &none        &none     &none                                                          &none        &none        &none        &none        &to 0
-				                                                &none &none                &none                &none
-				                                       &none    &none &none                &none                &none &none
-				                                                      &none                &none
+				&kp F12          &kp F1           &kp F2           &kp F3           &kp F4            &kp F5           &none     &none     &kp F6           &kp F7           &kp F8           &kp F9            &kp F10           &kp F11
+				&kp RA(NUMBER_1) &kp RA(Q)        &kp RA(W)        &kp RA(NUMBER_3) &kp RA(F)         &kp RA(G)        &none     &none     &kp LS(RBKT)     &kp RBKT         &none            &none             &kp RA(SEMICOLON) &none 
+				&none            &kp LS(NUMBER_1) &kp LS(NUMBER_2) &kp LS(NUMBER_3) &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                     &kp LC(NUMBER_6) &kp LC(NUMBER_7) &kp LC(NUMBER_8) &kp LC(NUMBER_9)  &kp LC(NUMBER_0)  &tog 2 
+				&none            &kp RA(X)        &kp RA(C)        &kp RA(V)        &kp RA(V)         &kp RA(B)        &none     &none     &kp RA(N)        &none            &kp RA(CMMA)     &kp RA(DOT)       &kp RA(FSLH)      &none
+				&none            &none            &none            &none            &none                                                  &none            &none            &none            &none             &none 
+				                                                                                      &none            &none     &none     &none    
+				                                                                    &none             &none            &none     &none     &none            &none
+				                                                                                                       &none     &none     
 			>;
 		};
+		// layer_1 {
+		// 	bindings = <
+		// 		&bootloader
+		// 		&none &none &none &none    &none            &none             &none          &to 0            &none &none          &none           &none &none &none
+		// 		&none &none &none &none    &none            &none             &none          &kp C_PLAY_PAUSE &none &none          &none           &none &none &none
+		// 		&none &none &none &kp PLUS &kp EQUAL        &none                                             &none &kp MINUS      &kp UNDERSCORE  &none &none &none
+		// 		&to 0 &none &none &kp LBKT &kp RBKT         &none             &kp C_PREVIOUS &kp C_NEXT       &none &kp LEFT_BRACE &kp RIGHT_BRACE &none &none &to 0
+		// 		&none &none &none &none    &none                                                                    &none          &none           &none &none &none
+		// 		                                            &none             &none          &none            &none
+		// 		                           &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &none          &none            &none &none
+		// 		                                                              &none          &none
+		// 	>;
+		// };
+		// layer_2 {
+		// 	bindings = <
+		// 		&bootloader
+		// 		&none &none     &none        &none     &none    &none &none                &to 0                &none &none        &none        &none        &none        &none
+		// 		&none &none     &none        &none     &none    &none &none                &none                &none &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &none        &none
+		// 		&none &kp SLASH &kp ASTERISK &kp MINUS &kp PLUS &none                                           &none &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_0 &kp BACKSPACE
+		// 		&none &none     &none        &none     &kp DOT  &none &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &none &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &none        &none
+		// 		&none &none     &none        &none     &none                                                          &none        &none        &none        &none        &to 0
+		// 		                                                &none &none                &none                &none
+		// 		                                       &none    &none &none                &none                &none &none
+		// 		                                                      &none                &none
+		// 	>;
+		// };
 	};
 };
