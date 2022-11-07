@@ -52,7 +52,7 @@
 		layer_2 {
 			bindings = <
 				&bootloader
-				&kp F12          &kp F1           &kp F2           &kp F3           &kp F4            &kp F5           &macro_name &none     &kp F6           &kp F7           &kp F8           &kp F9            &kp F10           &kp F11
+				&kp F12          &kp F1           &kp F2           &kp F3           &kp F4            &kp F5           &carret   &none     &kp F6           &kp F7           &kp F8           &kp F9            &kp F10           &kp F11
 				&kp RA(NUMBER_1) &kp RA(Q)        &kp RA(W)        &kp RA(NUMBER_3) &kp RA(F)         &kp RA(G)        &none     &none     &kp LS(RBKT)     &kp RBKT         &none            &none             &kp RA(SEMICOLON) &none 
 				&none            &kp LS(NUMBER_1) &kp LS(NUMBER_2) &kp LS(NUMBER_3) &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                     &kp LS(NUMBER_6) &kp LS(NUMBER_7) &kp LS(NUMBER_8) &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &tog 2 
 				&none            &none            &kp RA(X)        &kp RA(C)        &kp RA(V)         &kp RA(B)        &none     &none     &kp RA(N)        &none            &kp RA(CMMA)     &kp RA(DOT)       &kp RA(FSLH)      &none
