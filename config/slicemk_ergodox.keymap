@@ -5,14 +5,14 @@
 
 / {
 	macros {
-		macro_name: macro_name {
-			label = "my_macro";
+		macro_name: carret {
+			label = "carret";
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings
-				= <&macro_press &kp LSHFT>
-				, <&macro_tap &kp A &kp B &kp C>
-				, <&macro_release &kp LSHFT>
+				// = <&macro_press &kp LSHFT>
+				= <&macro_tap &kp RA(NUMBER_3) &kp SPC>
+				// , <&macro_release &kp LSHFT>
 				;
 		};
 	};
@@ -39,7 +39,7 @@
 		layer_1 {
 			bindings = <
 				&bootloader
-				&bt BT_SEL 0       &bt BT_SEL 1        &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4      &kp C_BRI_UP &kp C_RW  &kp C_FF  &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT    &kp C_PAUSE &none
+				&bt BT_SEL 0       &bt BT_SEL 1        &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4      &kp C_BRI_UP &kp C_AC_FORWARD &kp K_FORWARD &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT    &kp C_PAUSE &kp C_PIP
 				&kp CAPSLOCK       &kp LA(F4)          &kp LC(W)          &kp LC(DEL)      &kp LC(BACKSPACE) &kp LC(T)    &none     &none     &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT) &kp RC(V)   &none 
 				&none              &kp ESC             &kp ENTER          &kp DEL          &kp BACKSPACE     &kp K_CMENU                      &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &none       &tog 1
 				&none              &kp LC(C)           &kp LC(LS(TAB))    &kp LC(TAB)      &none             &none        &none     &none     &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none       &none
