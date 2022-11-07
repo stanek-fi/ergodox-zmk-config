@@ -44,7 +44,7 @@
 				&kp TAB     &kp Q        &kp W        &kp E        &kp R        &kp T        &kp LS(RBKT) &kp RBKT      &kp Y        &kp U        &kp I        &kp O        &kp P         &kp LBKT
 				&kp LCTRL   &kp A        &kp S        &kp D        &kp F        &kp G                                   &kp H        &kp J        &kp K        &kp L        &kp SEMICOLON &kp APOS
 				&kp LSHIFT  &kp Z        &kp X        &kp C        &kp V        &kp B        &kp RA(F)    &kp RA(G)     &kp N        &kp M        &kp CMMA     &kp DOT      &kp FSLH      &kp RSHIFT
-				&kp LCTRL   &none        &none        &kp LWIN     &kp LALT                                                          &mo 1        &mo 2        &kp RALT     &none         &kp RCTRL
+				&kp LCTRL   &tog 1       &tog 2       &kp LWIN     &kp LALT                                                          &mo 1        &mo 2        &kp RALT     &none         &kp RCTRL
 				                                                                &kp ESC      &kp PGUP     &kp BACKSPACE &kp DEL
 				                                                   &mo 1        &mo 2        &kp PGDN     &kp ENTER     &kp LSFT     &kp SPC
 				                                                                             &kp LCTRL    &kp RCTRL
@@ -55,7 +55,7 @@
 				&bootloader
 				&bt BT_SEL 0       &bt BT_SEL 1        &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4      &none       &none     &none     &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT    &kp C_PAUSE &none
 				&kp CAPSLOCK       &kp LA(F4)          &kp LC(W)          &kp LC(DEL)      &kp LC(BACKSPACE) &kp LC(T)   &none     &none     &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT) &kp RC(V)   &none 
-				&none              &kp ESC             &kp ENTER          &kp DEL          &kp BACKSPACE     &none                           &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &none       &tog 1
+				&none              &kp ESC             &kp ENTER          &kp DEL          &kp BACKSPACE     &kp K_MENU                      &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &none       &to 1
 				&none              &kp LC(C)           &kp LC(LS(TAB))    &kp LC(TAB)      &none             &none       &none     &none     &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none       &none
 				&none              &none               &none              &none            &none                                             &none        &none        &none        &none         &none
 				                                                                                             &none       &none     &none     &none
@@ -68,8 +68,8 @@
 				&bootloader
 				&kp F12          &kp F1           &kp F2           &kp F3           &kp F4            &kp F5           &none     &none     &kp F6           &kp F7           &kp F8           &kp F9            &kp F10           &kp F11
 				&kp RA(NUMBER_1) &kp RA(Q)        &kp RA(W)        &kp RA(NUMBER_3) &kp RA(F)         &kp RA(G)        &none     &none     &kp LS(RBKT)     &kp RBKT         &none            &none             &kp RA(SEMICOLON) &none 
-				&none            &kp LS(NUMBER_1) &kp LS(NUMBER_2) &kp LS(NUMBER_3) &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                     &kp LC(NUMBER_6) &kp LC(NUMBER_7) &kp LC(NUMBER_8) &kp LC(NUMBER_9)  &kp LC(NUMBER_0)  &tog 2 
-				&none            &kp RA(X)        &kp RA(C)        &kp RA(V)        &kp RA(V)         &kp RA(B)        &none     &none     &kp RA(N)        &none            &kp RA(CMMA)     &kp RA(DOT)       &kp RA(FSLH)      &none
+				&none            &kp LS(NUMBER_1) &kp LS(NUMBER_2) &kp LS(NUMBER_3) &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                     &kp LS(NUMBER_6) &kp LS(NUMBER_7) &kp LS(NUMBER_8) &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &to 2 
+				&none            &none            &kp RA(X)        &kp RA(C)        &kp RA(V)         &kp RA(B)        &none     &none     &kp RA(N)        &none            &kp RA(CMMA)     &kp RA(DOT)       &kp RA(FSLH)      &none
 				&none            &none            &none            &none            &none                                                  &none            &none            &none            &none             &none 
 				                                                                                      &none            &none     &none     &none    
 				                                                                    &none             &none            &none     &none     &none            &none
