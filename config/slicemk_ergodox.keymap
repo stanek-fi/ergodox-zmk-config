@@ -15,6 +15,16 @@
 				// , <&macro_release &kp LSHFT>
 				;
 		};
+		backtick: backtick {
+			label = "backtick";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				// = <&macro_press &kp LSHFT>
+				= <&macro_tap &kp RA(NUMBER_7) &kp SPC>
+				// , <&macro_release &kp LSHFT>
+				;
+		};
 	};
 	keymap {
 		compatible = "zmk,keymap";
@@ -39,21 +49,21 @@
 		layer_1 {
 			bindings = <
 				&bootloader
-				&bt BT_SEL 0       &bt BT_SEL 1        &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4      &none        &none     &none     &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT    &kp C_PAUSE &none 
-				&kp CAPSLOCK       &kp LA(F4)          &kp LC(W)          &kp LC(DEL)      &kp LC(BACKSPACE) &kp LC(T)    &none     &none     &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT) &kp RC(V)   &none 
-				&none              &kp ESC             &kp ENTER          &kp DEL          &kp BACKSPACE     &kp K_CMENU                      &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &none       &tog 1
-				&none              &kp LC(C)           &kp LC(LS(TAB))    &kp LC(TAB)      &none             &none        &none     &none     &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none       &none
-				&none              &tog 1              &tog 2             &none            &none                                              &none        &none        &none        &none         &none
-				                                                                                             &none        &none     &none     &none
-				                                                                           &none             &none        &none     &none     &none        &none
-				                                                                                                          &none     &none     
+				&bt BT_SEL 0       &bt BT_SEL 1        &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4      &none           &none     &none     &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT    &kp C_PAUSE &none 
+				&kp CAPSLOCK       &kp LA(F4)          &kp LC(ENTER)      &kp LC(DEL)      &kp LC(BACKSPACE) &none           &none     &none     &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT) &kp RC(V)   &none 
+				&none              &kp ESC             &kp ENTER          &kp DEL          &kp BACKSPACE     &kp K_CMENU                         &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &none       &tog 1
+				&none              &kp LC(C)           &kp LC(LS(TAB))    &kp LC(TAB)      &kp RA(TAB)       &kp LC(RA(TAB)) &none     &none     &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none       &none
+				&none              &tog 1              &tog 2             &none            &none                                                 &none        &none        &none        &none         &none
+				                                                                                             &none           &none     &none     &none
+				                                                                           &none             &none           &none     &none     &none        &none
+				                                                                                                             &none     &none     
 			>;
 		};
 		layer_2 {
 			bindings = <
 				&bootloader
 				&kp F12          &kp F1           &kp F2           &kp F3           &kp F4            &kp F5           &none     &none     &kp F6           &kp F7           &kp F8           &kp F9            &kp F10           &kp F11
-				&kp RA(NUMBER_1) &kp RA(Q)        &kp RA(W)        &carret          &kp RA(F)         &kp RA(G)        &none     &none     &kp LS(RBKT)     &kp RBKT         &none            &none             &kp RA(SEMICOLON) &kp EQUAL 
+				&kp RA(NUMBER_1) &kp RA(Q)        &kp RA(W)        &carret          &kp RA(F)         &kp RA(G)        &none     &none     &backtick        &kp LS(BSLH)     &kp LS(RBKT)     &kp RBKT          &kp RA(SEMICOLON) &kp EQUAL 
 				&none            &kp LS(NUMBER_1) &kp LS(NUMBER_2) &kp LS(NUMBER_3) &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                     &kp LS(NUMBER_6) &kp LS(NUMBER_7) &kp LS(NUMBER_8) &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &tog 2 
 				&none            &none            &kp RA(X)        &kp RA(C)        &kp RA(V)         &kp RA(B)        &none     &none     &kp RA(N)        &none            &kp RA(CMMA)     &kp RA(DOT)       &kp RA(FSLH)      &none
 				&none            &tog 1           &tog 2           &none            &none                                                  &none            &none            &none            &none             &none 
