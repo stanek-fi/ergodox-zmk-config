@@ -51,8 +51,8 @@
 				&bootloader
 				&none              &none               &none              &none            &none             &none           &none          &none           &none        &none        &none        &none         &none       &none 
 				&kp CAPSLOCK       &kp LA(F4)          &kp LC(ENTER)      &kp LC(DEL)      &kp LC(BACKSPACE) &kp LS(TAB)     &none          &none           &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT) &kp RC(V)   &none 
-				&none              &kp ESC             &kp ENTER          &kp DEL          &kp BACKSPACE     &kp TAB                                        &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &key_repeat &tog 1
-				&none              &kp LC(C)           &kp LC(LS(TAB))    &kp LC(TAB)      &kp RA(TAB)       &kp K_CMENU     &none          &none           &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &none       &none
+				&none              &kp ESC             &kp ENTER          &kp DEL          &kp BACKSPACE     &kp TAB                                        &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &kp TAB     &tog 1
+				&none              &kp LC(C)           &kp LC(LS(TAB))    &kp LC(TAB)      &kp RA(TAB)       &kp K_CMENU     &none          &none           &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &kp LS(TAB) &none
 				&none              &tog 1              &tog 2             &none            &none                                                            &none        &none        &none        &none         &none
 				                                                                                             &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3
 				                                                                           &none             &none           &none          &none           &none        &none
