@@ -58,53 +58,27 @@
 			bindings = <
 				&bootloader
 				&kp RA(GRAV)       &kp RA(NUMBER_1)    &kp RA(NUMBER_2)   &kp RA(NUMBER_3) &kp RA(NUMBER_4)  &kp RA(NUMBER_5) &none          &none           &kp RA(NUMBER_6)  &kp RA(NUMBER_7)  &kp RA(NUMBER_8)  &kp RA(NUMBER_9)  &kp LS(BSLH)      &kp LS(APOS)
-				&kp CAPSLOCK       &kp RA(Q)           &kp RA(W)          &kp LC(LS(TAB))  &kp LC(TAB)       &kp DEL          &none          &none           &kp HOME          &kp PG_DN         &kp PG_UP         &kp END           &kp LS(TAB)       &kp RBKT  
-				&none              &kp ESC             &kp ENTER          &kp BACKSPACE    &kp RA(F)         &kp RA(G)                                       &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT         &kp RA(SEMICOLON) &none
-				&none              &kp K_CMENU         &kp RA(X)          &kp RA(C)        &kp RA(V)         &kp RA(B)        &none          &none           &kp RA(N)         &kp TAB           &kp RA(CMMA)      &kp RA(DOT)       &kp LA(FSLH)      &none
-				&none              &none               &none              &none            &none                                                             &none             &none             &none             &none             &none             &none
+				&kp CAPSLOCK       &kp RA(Q)           &kp RA(W)          &kp LC(LS(TAB))  &kp LC(TAB)       &kp DEL          &none          &none           &kp HOME          &kp PG_DN         &kp PG_UP         &kp END           &kp LS(RBKT)      &kp RBKT  
+				&trans             &kp ESC             &kp ENTER          &kp BACKSPACE    &kp RA(F)         &kp RA(G)                                       &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT         &kp RA(SEMICOLON) &trans
+				&trans             &kp LS(TAB)         &kp RA(X)          &kp RA(C)        &kp RA(V)         &kp RA(B)        &none          &none           &kp RA(N)         &kp TAB           &kp RA(CMMA)      &kp RA(DOT)       &kp LA(FSLH)      &trans
+				&trans             &trans              &trans             &trans           &trans                                                            &trans            &trans            &trans            &trans            &trans            &trans
 				                                                                                             &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3     
 				                                                                           &none             &none            &none          &none           &none             &none
 				                                                                                                              &none          &none           
 			>;
 		};
-		// layer_1 {
-		// 	bindings = <
-		// 		&bootloader
-		// 		&kp LA(F4)         &kp F11             &kp F12            &kp F13          &kp F14           &kp F15         &none          &none           &kp F16      &kp F17      &kp F18      &kp F19       &kp F20     &none 
-		// 		&kp CAPSLOCK       &none               &kp LC(ENTER)      &kp LC(DEL)      &kp LC(BACKSPACE) &kp LS(TAB)     &none          &none           &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP)   &kp LC(RIGHT) &kp RC(V)   &none 
-		// 		&none              &kp ESC             &kp ENTER          &kp DEL          &kp BACKSPACE     &kp TAB                                        &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT     &kp TAB     &none
-		// 		&none              &kp LC(C)           &kp LC(LS(TAB))    &kp LC(TAB)      &kp RA(TAB)       &kp K_CMENU     &none          &none           &kp HOME     &kp PG_DN    &kp PG_UP    &kp END       &kp LS(TAB) &none
-		// 		&none              &tog 1              &tog 2             &none            &none                                                            &none        &none        &none        &none         &none       &none
-		// 		                                                                                             &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3
-		// 		                                                                           &none             &none           &none          &none           &none        &none
-		// 		                                                                                                             &none          &none           
-		// 	>;
-		// };
 		layer_2 {
 			bindings = <
 				&bootloader
 				&none            &none            &none            &none            &none             &none            &none     &none     &none            &none            &none            &none             &none             &none
 				&none            &kp F1           &kp F2           &kp F3           &kp F4            &kp F5           &none     &none     &kp F6           &kp F7           &kp F8           &kp F9            &kp F10           &none
-				&none            &kp LS(NUMBER_1) &kp LS(NUMBER_2) &kp LS(NUMBER_3) &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                     &kp LS(NUMBER_6) &kp LS(NUMBER_7) &kp LS(NUMBER_8) &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &none 
-				&none            &kp F11          &kp F12          &kp F13          &kp F14           &kp F15          &none     &none     &kp F16          &kp F17          &kp F18          &kp F19           &kp F20           &none
-				&none            &none            &none            &none            &none                                                  &none            &none            &none            &none             &none             &none 
+				&trans           &kp LS(NUMBER_1) &kp LS(NUMBER_2) &kp LS(NUMBER_3) &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                     &kp LS(NUMBER_6) &kp LS(NUMBER_7) &kp LS(NUMBER_8) &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &trans 
+				&trans           &kp F11          &kp F12          &kp F13          &kp F14           &kp F15          &none     &none     &kp F16          &kp F17          &kp F18          &kp F19           &kp F20           &trans
+				&trans           &trans           &trans           &trans           &trans                                                 &trans           &trans           &trans           &trans            &trans            &trans 
 				                                                                                      &none            &none     &none     &none    
 				                                                                    &none             &none            &none     &none     &none            &none
 				                                                                                                       &none     &none     
 			>;
 		};
-		// layer_2 {
-		// 	bindings = <
-		// 		&bootloader
-		// 		&none            &kp F1           &kp F2           &kp F3           &kp F4            &kp F5           &none     &none     &kp F6           &kp F7           &kp F8           &kp F9            &kp F10           &kp EQUAL
-		// 		&kp RA(NUMBER_1) &kp RA(Q)        &kp RA(W)        &carret          &kp RA(F)         &kp RA(G)        &none     &none     &backtick        &kp LS(BSLH)     &kp LS(RBKT)     &kp RBKT          &kp RA(SEMICOLON) &none
-		// 		&none            &kp LS(NUMBER_1) &kp LS(NUMBER_2) &kp LS(NUMBER_3) &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                     &kp LS(NUMBER_6) &kp LS(NUMBER_7) &kp LS(NUMBER_8) &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp LS(APOS) 
-		// 		&none            &none            &kp RA(X)        &kp RA(C)        &kp RA(V)         &kp RA(B)        &none     &none     &kp RA(N)        &none            &kp RA(CMMA)     &kp RA(DOT)       &kp RA(FSLH)      &none
-		// 		&none            &tog 1           &tog 2           &none            &none                                                  &none            &none            &none            &none             &none             &none 
-		// 		                                                                                      &none            &none     &none     &none    
-		// 		                                                                    &none             &none            &none     &none     &none            &none
-		// 		                                                                                                       &none     &none     
-		// 	>;
-		// };
 	};
 };
